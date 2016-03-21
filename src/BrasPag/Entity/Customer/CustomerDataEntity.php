@@ -8,6 +8,9 @@ use Alexandreo\Contracts\Customer\CustomerDeliveryAddressDataContracts;
 class CustomerDataEntity implements CustomerDataContracts
 {
 
+	/*
+	* CPF
+	*/
 	private $identity;
 
 	private $identityType;
@@ -18,43 +21,50 @@ class CustomerDataEntity implements CustomerDataContracts
 
 	private $birthDate;
 
-	private $customerAddressDataContracts;
+	private $customerAddressDataContracts = '';
 
-	private $customerDeliveryAddressDataContracts;
+	private $customerDeliveryAddressDataContracts = '';
 
 	public function setCustomerIdentity($identity)
 	{
 		$this->identity = $identity;
+		return $this;
 	}
 
 	public function setCustomerIdentityType($identityType)
 	{
 		$this->identityType = $identityType;
+		return $this;
 	}
 
 	public function setCustomerName($customerName)
 	{
 		$this->customerName = $customerName;
+		return $this;
 	}
 
-	public function setCustomerEmail($email)
+	public function setCustomerEmail($customerEmail)
 	{
-		$this->email = $email;
+		$this->customerEmail = $customerEmail;
+		return $this;
 	}
 
 	public function setBirthDate($birthDate)
 	{
 		$this->birthDate = $birthDate;
+		return $this;
 	}
 
 	public function setCustomerAddressData(CustomerAddressDataContracts $customerAddressDataContracts)
 	{
 		$this->customerAddressDataContracts = $customerAddressDataContracts;
+		return $this;
 	}
 
 	public function setCustomerDeliveryAddressData(CustomerDeliveryAddressDataContracts $customerDeliveryAddressDataContracts)
 	{
-		$this->customerDeliveryAddressDataContracts = $customerDeliveryAddressDataContracts;		
+		$this->customerDeliveryAddressDataContracts = $customerDeliveryAddressDataContracts;
+		return $this;		
 	}
 
 	public function getCustomerIdentity()

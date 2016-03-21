@@ -10,26 +10,29 @@ class OrderDataEntity implements OrderDataContracts
 
 	private $orderId;
 
-	private $braspagOrderId;
+	private $braspagOrderId = '';
 
 	public function setMerchantId($merchantId)
 	{
 		$this->merchantId = $merchantId;
+		return $this;
 	}
 
 	public function setOrderId($orderId)
 	{
 		$this->orderId = $orderId;
+		return $this;
 	}
 
 	public function setBraspagOrderId($braspagOrderId)
 	{
 		$this->braspagOrderId = $braspagOrderId;
+		return $this;
 	}
 
 	public function getMerchantId()
 	{
-		return $this->braspagOrderId;
+		return $this->merchantId;
 	}
 
 	public function getOrderId()

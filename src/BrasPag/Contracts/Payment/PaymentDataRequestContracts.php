@@ -15,6 +15,20 @@ interface PaymentDataRequestContracts
 
 	public function setCountry($country);
 
+	public function setNumberOfPayments($numberOfPayments);
+
+	public function setPaymentPlan($paymentPlan);
+
+	public function setTransactionType($transactionType);
+
+	public function setCardHolder($cardHolder);
+
+	public function setCardNumber($cardNumber);
+
+	public function setCardSecurityCode($cardSecurityCode);
+
+	public function setCardExpirationDate($cardExpirationDate);
+
 	public function setAdditionalDataCollection(AdditionalDataCollectionContracts $additionalDataCollectionContracts);
 	
 	public function setAffiliationData(AffiliationDataContracts $affiliationDataContracts);
@@ -26,6 +40,20 @@ interface PaymentDataRequestContracts
 	public function getCurrency();
 
 	public function getCountry();
+
+	public function getNumberOfPayments();
+
+	public function getPaymentPlan();
+
+	public function getTransactionType();
+
+	public function getCardHolder();
+
+	public function getCardNumber();
+
+	public function getCardSecurityCode();
+
+	public function getCardExpirationDate();
 
 	public function getAdditionalDataCollection();
 	

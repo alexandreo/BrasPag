@@ -1,11 +1,11 @@
 <?php 
-namespace Alexandreo\Entity\AuthorizeTransaction;
+namespace Alexandreo\Contracts\Requests;
 
 use Alexandreo\Contracts\Order\OrderDataContracts;
 use Alexandreo\Contracts\Customer\CustomerDataContracts;
 use Alexandreo\Contracts\Payment\PaymentDataCollectionContracts;
 
-interface AuthorizeTransactionEntity
+interface AuthorizeTransactionContracts
 {
 
 	public function setRequestId($requestId);
@@ -17,5 +17,15 @@ interface AuthorizeTransactionEntity
 	public function setCustomerData(CustomerDataContracts $customerDataContracts);
 
 	public function setPaymentDataCollection(PaymentDataCollectionContracts $paymentDataCollectionContracts);
+
+	public function getRequestId();
+
+	public function getVersion();
+
+	public function getOrderData();
+
+	public function getCustomerData();
+
+	public function getPaymentDataCollection();
 	
 }

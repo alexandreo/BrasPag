@@ -10,7 +10,8 @@ class AdditionalDataCollectionEntity implements AdditionalDataCollectionContract
 
 	public function setAdditionalDataRequest(array $additionalDataRequest)
 	{
-		$this->additionalDataRequest = $additionalDataRequest; 
+		$this->additionalDataRequest = $additionalDataRequest;
+		return $this; 
 	}
 
 	public function getAdditionalDataRequest()

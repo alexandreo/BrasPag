@@ -1,7 +1,7 @@
 <?php 
 namespace Alexandreo\Contracts\Payment;
 
-use Alexandreo\Contracts\Payment\PaymentDataRequestContracts
+use Alexandreo\Contracts\Payment\PaymentDataRequestContracts;
 
 interface PaymentDataCollectionContracts
 {

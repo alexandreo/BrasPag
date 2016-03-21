@@ -1,7 +1,9 @@
 <?php 
-namespace Alexandreo;
+namespace Alexandreo\Soap;
 
-abstract class SoapClient extends \SoapClient
+use SoapClient;
+
+abstract class Client extends SoapClient
 {
 
 	function __construct($wsdl = null, $options = array())
