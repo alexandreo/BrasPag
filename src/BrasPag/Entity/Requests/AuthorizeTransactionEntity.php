@@ -5,7 +5,8 @@ use Alexandreo\Contracts\Requests\AuthorizeTransactionContracts;
 use Alexandreo\Contracts\Order\OrderDataContracts;
 use Alexandreo\Contracts\Customer\CustomerDataContracts;
 use Alexandreo\Contracts\Payment\PaymentDataCollectionContracts;
-use Ramsey\Uuid\Uuid;
+use Alexandreo\Helpers;
+
 
 
 class AuthorizeTransactionEntity implements AuthorizeTransactionContracts
@@ -52,18 +53,17 @@ class AuthorizeTransactionEntity implements AuthorizeTransactionContracts
 		return $this;
 	}
 
-
 	public function getRequestId()
 	{
 		if (!empty($this->requestId))
 			return $this->requestId;
 		else 
-			return Uuid::uuid1();
+			return Helpers::genereteResquestId();
 	}
 
 	public function getVersion()
 	{
-		return $this->requestId;
+		return $this->version;
 	}
 
 	public function getOrderData()

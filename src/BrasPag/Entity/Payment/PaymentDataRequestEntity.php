@@ -4,6 +4,7 @@ namespace Alexandreo\Entity\Payment;
 use Alexandreo\Contracts\Payment\PaymentDataRequestContracts;
 use Alexandreo\Contracts\Payment\AdditionalDataCollectionContracts;
 use Alexandreo\Contracts\Payment\AffiliationDataContracts;
+use Alexandreo\Contracts\Payment\PaymentTypeContract;
 
 class PaymentDataRequestEntity implements PaymentDataRequestContracts
 {
@@ -16,23 +17,17 @@ class PaymentDataRequestEntity implements PaymentDataRequestContracts
 
 	private $country = 'BRA';
 
-	private $numberOfPayments = 1;
+	private $objPaymentType;
 
-	private $paymentPlan;
+	private $additionalDataCollectionContracts = '';
 
-	private $TransactionType;
+	private $affiliationDataContracts = '';
 
-	private $cardHolder;
-
-	private $cardNumber;
-
-	private $cardSecurityCode;
-
-	private $cardExpirationDate;
-
-	private $additionalDataCollectionContracts;
-
-	private $affiliationDataContracts;
+	public function setObjPaymentType(PaymentTypeContract $objPaymentType)
+	{
+		$this->objPaymentType = $objPaymentType;
+		return $this;		
+	}
 
 	public function setPaymentMethod($paymentMethod)
 	{
@@ -58,48 +53,6 @@ class PaymentDataRequestEntity implements PaymentDataRequestContracts
 		return $this;
 	}
 
-	public function setNumberOfPayments($numberOfPayments)
-	{
-		$this->numberOfPayments = $numberOfPayments;
-		return $this;
-	}
-
-	public function setPaymentPlan($paymentPlan)
-	{
-		$this->paymentPlan = $paymentPlan;
-		return $this;
-	}
-
-	public function setTransactionType($transactionType)
-	{
-		$this->transactionType = $transactionType;
-		return $this;
-	}
-
-	public function setCardHolder($cardHolder)
-	{
-		$this->cardHolder = $cardHolder;
-		return $this;
-	}
-
-	public function setCardNumber($cardNumber)
-	{
-		$this->cardNumber = $cardNumber;
-		return $this;
-	}
-
-	public function setCardSecurityCode($cardSecurityCode)
-	{
-		$this->cardSecurityCode = $cardSecurityCode;
-		return $this;
-	}
-
-	public function setCardExpirationDate($cardExpirationDate)
-	{
-		$this->cardExpirationDate = $cardExpirationDate;
-		return $this;
-	}
-
 	public function setAdditionalDataCollection(AdditionalDataCollectionContracts $additionalDataCollectionContracts)
 	{
 		$this->additionalDataCollectionContracts = $additionalDataCollectionContracts;
@@ -111,7 +64,12 @@ class PaymentDataRequestEntity implements PaymentDataRequestContracts
 		$this->affiliationDataContracts = $affiliationDataContracts;
 		return $this;
 	}
-	
+
+	public function getObjPaymentType()
+	{
+		return $this->objPaymentType;
+	}
+
 	public function getPaymentMethod()
 	{
 		return $this->paymentMethod;
@@ -130,41 +88,6 @@ class PaymentDataRequestEntity implements PaymentDataRequestContracts
 	public function getCountry()
 	{
 		return $this->country;
-	}
-
-	public function getNumberOfPayments()
-	{
-		return $this->numberOfPayments;
-	}
-
-	public function getPaymentPlan()
-	{
-		return $this->paymentPlan;
-	}
-
-	public function getTransactionType()
-	{
-		return $this->transactionType;
-	}
-
-	public function getCardHolder()
-	{
-		return $this->cardHolder;
-	}
-
-	public function getCardNumber()
-	{
-		return $this->cardNumber;
-	}
-
-	public function getCardSecurityCode()
-	{
-		return $this->cardSecurityCode;
-	}
-
-	public function getCardExpirationDate()
-	{
-		return $this->cardExpirationDate;
 	}
 
 	public function getAdditionalDataCollection()
