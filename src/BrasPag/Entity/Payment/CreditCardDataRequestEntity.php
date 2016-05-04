@@ -10,7 +10,7 @@ class CreditCardDataRequestEntity implements CreditCardDataRequestContracts
 
 	private $paymentPlan;
 
-	private $TransactionType;
+	private $transactionType;
 
 	private $cardHolder;
 

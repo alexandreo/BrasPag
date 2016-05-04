@@ -1,5 +1,5 @@
 <?php
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use Alexandreo\BrasPag;
 use Alexandreo\Entity\Requests\AuthorizeTransactionEntity;
@@ -12,7 +12,7 @@ use Alexandreo\Entity\Payment\CreditCardDataRequestEntity;
 $BrasPag = new BrasPag;
 $orderDataEntity = new OrderDataEntity;
 $orderDataEntity
-	->setMerchantId('You MerchantId')
+	->setMerchantId('78d72764-b315-4b55-9558-c0aeb8dd8352')
 	->setOrderId(rand(100,99999));
 
 $customerDataEntity = new CustomerDataEntity;
