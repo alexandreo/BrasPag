@@ -3,6 +3,7 @@ namespace Alexandreo\Soap;
 
 use Alexandreo\Soap\Client;
 use SoapFault;
+use Exception;
 use Alexandreo\Exceptions\ErrorException;
 
 class BrasPagClient extends Client
@@ -21,9 +22,9 @@ class BrasPagClient extends Client
                     "trace"        => 1
             ]);
         } catch (\Exception $e) {
-             var_dump($e->getMessage());
+             throw new Exception($e->getMessage());
         } catch (\SoapFault $SoapFault) {
-            var_dump($this->__getLastRequest());
+            throw new Exception($e->getMessage());
         }
 	}
 
