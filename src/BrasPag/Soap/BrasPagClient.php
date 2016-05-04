@@ -41,8 +41,7 @@ class BrasPagClient extends Client
 		try {
 			return parent::AuthorizeTransaction($authorizeTransaction);
 		} catch (SoapFault $e) {
-			var_dump($e);
-			throw new ErrorException('Inválid Request XML.');
+			throw new Exception($e->getMessage());
 		}
 	}
 
