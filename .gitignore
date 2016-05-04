@@ -1,2 +1,4 @@
 /vendor
 index.php
+.phpintel/
+.phpintel/*
