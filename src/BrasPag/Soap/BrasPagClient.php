@@ -9,14 +9,10 @@ use Alexandreo\Exceptions\ErrorException;
 class BrasPagClient extends Client
 {
 
-	const homologacaoPagadorTransaction = 'https://homologacao.pagador.com.br/webservice/pagadorTransaction.asmx?WSDL';
-
-	const producaoPagadorTransaction = 'https://homologacao.pagador.com.br/webservice/pagadorTransaction.asmx?WSDL';
-
 	function __construct($options = [])
 	{
         try {
-            parent::__construct(self::homologacaoPagadorTransaction, [
+            parent::__construct(BRASPAG_ENDPOINT, [
                     'soap_version' => SOAP_1_2,
                     'cache_wsdl'   => 1,
                     "trace"        => 1
@@ -30,6 +26,7 @@ class BrasPagClient extends Client
 
 	public function __doRequest($request, $location, $action, $version, $one_way = 0) 
 	{
+		//fix error brasgpag soap
 		$request = str_replace('xsi:type="true"', 'xsi:nil="true"', $request);
 		$request = str_replace('ns1:', '', $request);
 		$request = str_replace('xmlns:ns1="https://www.pagador.com.br/webservice/pagador"', '', $request);
