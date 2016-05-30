@@ -1,6 +1,7 @@
 <?php
 require_once '../vendor/autoload.php';
 
+
 use Alexandreo\BrasPag;
 use Alexandreo\Entity\Requests\AuthorizeTransactionEntity;
 use Alexandreo\Entity\Order\OrderDataEntity;
@@ -9,10 +10,10 @@ use Alexandreo\Entity\Payment\PaymentDataRequestEntity;
 use Alexandreo\Entity\Payment\PaymentDataCollectionEntity;
 use Alexandreo\Entity\Payment\CreditCardDataRequestEntity;
 
-$BrasPag = new BrasPag;
+$BrasPag = new BrasPag(false);
 $orderDataEntity = new OrderDataEntity;
 $orderDataEntity
-	->setMerchantId('')
+	->setMerchantId('78d72764-b315-4b55-9558-c0aeb8dd8352')
 	->setOrderId(rand(100,99999));
 
 $customerDataEntity = new CustomerDataEntity;
@@ -48,7 +49,6 @@ $authorizeTransactionEntity
 	->setPaymentDataCollection($paymentDataCollectionEntity);
 
 $Pagar = $BrasPag->authorizeTransaction($authorizeTransactionEntity);
-
 
 
 dd($Pagar);

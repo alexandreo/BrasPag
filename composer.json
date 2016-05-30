@@ -15,9 +15,6 @@
         "phpunit/phpunit": "~4.8 || ~5.0"
     },
     "autoload": {
-        "files": [
-            "src/BrasPag/config.php"
-        ],
         "psr-4": {
           "Alexandreo\\": "src/BrasPag/"
         }

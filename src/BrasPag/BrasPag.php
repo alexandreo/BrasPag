@@ -3,6 +3,7 @@ namespace Alexandreo;
 
 use Alexandreo\Soap\BrasPagClient;
 use Alexandreo\Contracts\Requests\AuthorizeTransactionContracts;
+use Alexandreo\Contracts\Requests\CaptureCreditCardTransactionContracts;
 use Alexandreo\Contracts\Payment\CreditCardDataRequestContracts;
 use StdClass;
 use Soapvar;
@@ -13,13 +14,13 @@ class BrasPag
 
 	private $brasPagClient = null;
 
-	function __construct()
+	function __construct($envProducation = true)
 	{
 		$this->brasPagClient = new brasPagClient([
             'soap_version' => SOAP_1_2,
             'cache_wsdl'   => 1,
             "trace"        => 1
-		]);
+		], $envProducation);
 	}
 
 	public function authorizeTransaction(AuthorizeTransactionContracts $authorizeTransaction)
@@ -67,6 +68,27 @@ class BrasPag
 		$request->request->PaymentDataCollection->PaymentDataRequest = new SoapVar($Payment, SOAP_ENC_OBJECT, $PaymentType->getPaymentType());
 		
 		return $this->brasPagClient->authorizeTransaction($request);
+	}
+
+	public function captureCreditCardTransaction(CaptureCreditCardTransactionContracts $captureCreditCardTransactionContracts )
+	{
+		$request = new StdClass;
+
+		$request->request = new StdClass;
+
+		$request->request->RequestId = $captureCreditCardTransactionContracts->getRequestId();
+		$request->request->Version = $captureCreditCardTransactionContracts->getVersion();
+		$request->request->MerchantId = $captureCreditCardTransactionContracts->getMerchantId();
+
+		$request->request->TransactionDataCollection = new StdClass;
+		//TransactionDataCollection
+		foreach ($captureCreditCardTransactionContracts->getTransactionDataCollection()->getTransactionDataRequest() as $transactionDataRequest) {
+			$request->request->TransactionDataCollection->TransactionDataRequest = new StdClass;
+			$request->request->TransactionDataCollection->TransactionDataRequest->BraspagTransactionId = $transactionDataRequest->getBraspagTransactionId();
+			$request->request->TransactionDataCollection->TransactionDataRequest->Amount = $transactionDataRequest->getAmount();
+			$request->request->TransactionDataCollection->TransactionDataRequest->ServiceTaxAmount = $transactionDataRequest->getServiceTaxAmount();
+		}
+		return $this->brasPagClient->captureCreditCardTransaction($request);
 	}
 
 }
