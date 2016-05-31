@@ -57,14 +57,22 @@ class BrasPagClient extends Client
 		}
 	}
 
-	public function refundCreditCardTransaction()
+	public function refundCreditCardTransaction($refundCreditCardTransaction)
 	{
-		//dev
+		try {
+			return parent::RefundCreditCardTransaction($refundCreditCardTransaction);
+		} catch (SoapFault $e) {
+			throw new Exception($e->getMessage());
+		}
 	}
 
-	public function voidCreditCardTransaction()
+	public function voidCreditCardTransaction($voidCreditCardTransaction)
 	{
-		//dev
+		try {
+			return parent::VoidCreditCardTransaction($voidCreditCardTransaction);
+		} catch (SoapFault $e) {
+			throw new Exception($e->getMessage());
+		}
 	}
 
 }

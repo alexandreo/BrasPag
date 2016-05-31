@@ -1,13 +1,15 @@
 <?php 
 namespace Alexandreo;
 
+use Alexandreo\Constants\BrasPagSoapClient;
 use Alexandreo\Soap\BrasPagClient;
 use Alexandreo\Contracts\Requests\AuthorizeTransactionContracts;
 use Alexandreo\Contracts\Requests\CaptureCreditCardTransactionContracts;
+use Alexandreo\Contracts\Requests\RefundCreditCardTransactionContracts;
+use Alexandreo\Contracts\Requests\VoidCreditCardTransactionContracts;
 use Alexandreo\Contracts\Payment\CreditCardDataRequestContracts;
 use StdClass;
 use Soapvar;
-use Alexandreo\Constants\BrasPagSoapClient;
 
 class BrasPag 
 {
@@ -89,6 +91,49 @@ class BrasPag
 			$request->request->TransactionDataCollection->TransactionDataRequest->ServiceTaxAmount = $transactionDataRequest->getServiceTaxAmount();
 		}
 		return $this->brasPagClient->captureCreditCardTransaction($request);
+	}
+
+
+	public function refundCreditCardTransaction(RefundCreditCardTransactionContracts $refundCreditCardTransactionContracts)
+	{
+		$request = new StdClass;
+
+		$request->request = new StdClass;
+
+		$request->request->RequestId = $refundCreditCardTransactionContracts->getRequestId();
+		$request->request->Version = $refundCreditCardTransactionContracts->getVersion();
+		$request->request->MerchantId = $refundCreditCardTransactionContracts->getMerchantId();
+
+		$request->request->TransactionDataCollection = new StdClass;
+		//TransactionDataCollection
+		foreach ($refundCreditCardTransactionContracts->getTransactionDataCollection()->getTransactionDataRequest() as $transactionDataRequest) {
+			$request->request->TransactionDataCollection->TransactionDataRequest = new StdClass;
+			$request->request->TransactionDataCollection->TransactionDataRequest->BraspagTransactionId = $transactionDataRequest->getBraspagTransactionId();
+			$request->request->TransactionDataCollection->TransactionDataRequest->Amount = $transactionDataRequest->getAmount();
+			$request->request->TransactionDataCollection->TransactionDataRequest->ServiceTaxAmount = $transactionDataRequest->getServiceTaxAmount();
+		}		
+		return $this->brasPagClient->refundCreditCardTransaction($request);
+	}
+
+	public function voidCreditCardTransaction(VoidCreditCardTransactionContracts $voidCreditCardTransactionContracts)
+	{
+		$request = new StdClass;
+
+		$request->request = new StdClass;
+
+		$request->request->RequestId = $voidCreditCardTransactionContracts->getRequestId();
+		$request->request->Version = $voidCreditCardTransactionContracts->getVersion();
+		$request->request->MerchantId = $voidCreditCardTransactionContracts->getMerchantId();
+
+		$request->request->TransactionDataCollection = new StdClass;
+		//TransactionDataCollection
+		foreach ($voidCreditCardTransactionContracts->getTransactionDataCollection()->getTransactionDataRequest() as $transactionDataRequest) {
+			$request->request->TransactionDataCollection->TransactionDataRequest = new StdClass;
+			$request->request->TransactionDataCollection->TransactionDataRequest->BraspagTransactionId = $transactionDataRequest->getBraspagTransactionId();
+			$request->request->TransactionDataCollection->TransactionDataRequest->Amount = $transactionDataRequest->getAmount();
+			$request->request->TransactionDataCollection->TransactionDataRequest->ServiceTaxAmount = $transactionDataRequest->getServiceTaxAmount();
+		}		
+		return $this->brasPagClient->refundCreditCardTransaction($request);
 	}
 
 }
