@@ -9,7 +9,7 @@ use Alexandreo\Exceptions\ErrorException;
 class BrasPagClient extends Client
 {
 
-	private $producaoEndPoint = 'https://homologacao.pagador.com.br/webservice/pagadorTransaction.asmx?WSDL';
+	private $producaoEndPoint = 'https://pagador.com.br/webservice/pagadorTransaction.asmx?WSDL';
 
 	private $homologacaoEndPoint = 'https://homologacao.pagador.com.br/webservice/pagadorTransaction.asmx?WSDL';
 
