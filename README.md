@@ -15,12 +15,12 @@ http://www.braspag.com.br/site/wp-content/uploads/manuais/pagador-transaction-au
 ##Funcionalidades Pagador Transaction.
 Autorização, Captura, Cancelamento e Estorno
 
-## Como Usar
-Para utilizar ambiente de homologação basta passa como exemplo abaixo.
+## Como Usarp
+Para utilizar ambiente de homologação basta passar como exemplo abaixo.
 ```php
 $brasPag = new BrasPag(false);
 ```
-Para utilizar ambiente de produção basta passa como exemplo abaixo.
+Para utilizar ambiente de produção basta passar como exemplo abaixo.
 ```php
 $brasPag = new BrasPag(true);
 ```
