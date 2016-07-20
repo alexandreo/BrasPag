@@ -1,5 +1,9 @@
 <?php
-require_once '../vendor/autoload.php';
+
+$path = dirname(dirname(dirname(dirname(dirname(__FILE__)))));
+$fileName = $path . "/vendor/autoload.php";
+//echo $fileName;
+require_once $fileName;
 
 
 use Alexandreo\BrasPag;
