@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace Alexandreo;
 
 use Alexandreo\Constants\BrasPagSoapClient;
@@ -11,7 +11,7 @@ use Alexandreo\Contracts\Payment\CreditCardDataRequestContracts;
 use StdClass;
 use Soapvar;
 
-class BrasPag 
+class BrasPag
 {
 
 	private $brasPagClient = null;
@@ -25,10 +25,15 @@ class BrasPag
 		], $envProducation);
 	}
 
+	/**
+	 * [authorizeTransaction description]
+	 * @param  AuthorizeTransactionContracts $authorizeTransaction [Obj que será serializado para XML]
+	 * @return [obj]                                              [retorno braspag]
+	 */
 	public function authorizeTransaction(AuthorizeTransactionContracts $authorizeTransaction)
 	{
 		$request = new StdClass;
-		
+
 		$request->request = new StdClass;
 		//Request
 		$request->request->RequestId = $authorizeTransaction->getRequestId();
@@ -47,12 +52,12 @@ class BrasPag
 		$request->request->CustomerData->DeliveryAddressData = new SoapVar($authorizeTransaction->getCustomerData()->getCustomerDeliveryAddressData(), SOAP_ENC_OBJECT, 'true');
 		$authorizeTransaction->getCustomerData()->getCustomerDeliveryAddressData();
 		//PaymentDataCollection
-		$Payment = new StdClass; 
+		$Payment = new StdClass;
 		$Payment->PaymentMethod = new SoapVar($authorizeTransaction->getPaymentDataCollection()->getPaymentDataRequest()->getPaymentMethod(), XSD_INT, null, null, 'PaymentMethod', BrasPagSoapClient::NAMESPACE);
 		$Payment->Amount = new SoapVar($authorizeTransaction->getPaymentDataCollection()->getPaymentDataRequest()->getAmount(), XSD_INT, null, null, 'Amount', BrasPagSoapClient::NAMESPACE);
 		$Payment->Currency = new SoapVar($authorizeTransaction->getPaymentDataCollection()->getPaymentDataRequest()->getCurrency(), XSD_STRING, null, null, 'Currency', BrasPagSoapClient::NAMESPACE );
 		$Payment->Country = new SoapVar($authorizeTransaction->getPaymentDataCollection()->getPaymentDataRequest()->getCountry(), XSD_STRING, null, null, 'Country', BrasPagSoapClient::NAMESPACE );
-		
+
 		$PaymentType = $authorizeTransaction->getPaymentDataCollection()->getPaymentDataRequest()->getObjPaymentType();
 		if ($PaymentType instanceof CreditCardDataRequestContracts){
 			$Payment->NumberOfPayments = new SoapVar($PaymentType->getNumberOfPayments(), XSD_STRING, null, null, 'Number', BrasPagSoapClient::NAMESPACE );
@@ -68,10 +73,15 @@ class BrasPag
 		$Payment->AffiliationData = new SoapVar($authorizeTransaction->getPaymentDataCollection()->getPaymentDataRequest()->getAffiliationData(), SOAP_ENC_OBJECT, 'true', NULL, NULL, BrasPagSoapClient::NAMESPACE);
 		$request->request->PaymentDataCollection = new StdClass;
 		$request->request->PaymentDataCollection->PaymentDataRequest = new SoapVar($Payment, SOAP_ENC_OBJECT, $PaymentType->getPaymentType());
-		
+
 		return $this->brasPagClient->authorizeTransaction($request);
 	}
 
+	/**
+	 * [captureCreditCardTransaction description]
+	 * @param  CaptureCreditCardTransactionContracts $captureCreditCardTransactionContracts [description]
+	 * @return [type]                                                                       [description]
+	 */
 	public function captureCreditCardTransaction(CaptureCreditCardTransactionContracts $captureCreditCardTransactionContracts )
 	{
 		$request = new StdClass;
@@ -93,7 +103,11 @@ class BrasPag
 		return $this->brasPagClient->captureCreditCardTransaction($request);
 	}
 
-
+	/**
+	 * [refundCreditCardTransaction description]
+	 * @param  RefundCreditCardTransactionContracts $refundCreditCardTransactionContracts [description]
+	 * @return [type]                                                                     [description]
+	 */
 	public function refundCreditCardTransaction(RefundCreditCardTransactionContracts $refundCreditCardTransactionContracts)
 	{
 		$request = new StdClass;
@@ -111,10 +125,15 @@ class BrasPag
 			$request->request->TransactionDataCollection->TransactionDataRequest->BraspagTransactionId = $transactionDataRequest->getBraspagTransactionId();
 			$request->request->TransactionDataCollection->TransactionDataRequest->Amount = $transactionDataRequest->getAmount();
 			$request->request->TransactionDataCollection->TransactionDataRequest->ServiceTaxAmount = $transactionDataRequest->getServiceTaxAmount();
-		}		
+		}
 		return $this->brasPagClient->refundCreditCardTransaction($request);
 	}
 
+	/**
+	 * [voidCreditCardTransaction description]
+	 * @param  VoidCreditCardTransactionContracts $voidCreditCardTransactionContracts [description]
+	 * @return [type]                                                                 [description]
+	 */
 	public function voidCreditCardTransaction(VoidCreditCardTransactionContracts $voidCreditCardTransactionContracts)
 	{
 		$request = new StdClass;
@@ -132,8 +151,20 @@ class BrasPag
 			$request->request->TransactionDataCollection->TransactionDataRequest->BraspagTransactionId = $transactionDataRequest->getBraspagTransactionId();
 			$request->request->TransactionDataCollection->TransactionDataRequest->Amount = $transactionDataRequest->getAmount();
 			$request->request->TransactionDataCollection->TransactionDataRequest->ServiceTaxAmount = $transactionDataRequest->getServiceTaxAmount();
-		}		
+		}
 		return $this->brasPagClient->refundCreditCardTransaction($request);
+	}
+
+	/**
+	 * [log description]
+	 * @return [array] [retorna o request e reponse da action chamada]
+	 */
+	public function log()
+	{
+		return [
+			'request' => $this->brasPagClient->xmlRequest,
+			'reponse' => $this->brasPagClient->xmlReponse,
+		];
 	}
 
 }
