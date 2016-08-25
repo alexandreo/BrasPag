@@ -152,7 +152,7 @@ class BrasPag
 			$request->request->TransactionDataCollection->TransactionDataRequest->Amount = $transactionDataRequest->getAmount();
 			$request->request->TransactionDataCollection->TransactionDataRequest->ServiceTaxAmount = $transactionDataRequest->getServiceTaxAmount();
 		}
-		return $this->brasPagClient->refundCreditCardTransaction($request);
+		return $this->brasPagClient->voidCreditCardTransaction($request);
 	}
 
 	/**
