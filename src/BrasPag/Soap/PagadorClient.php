@@ -6,7 +6,7 @@ use SoapFault;
 use Exception;
 use Alexandreo\Exceptions\ErrorException;
 
-class BrasPagClient extends Client
+class PagadorClient extends Client
 {
 	/**
 	 * [$producaoEndPoint Url para o ambiente de produção]
@@ -19,18 +19,6 @@ class BrasPagClient extends Client
 	 * @var string
 	 */
 	private $homologacaoEndPoint = 'https://homologacao.pagador.com.br/webservice/pagadorTransaction.asmx?WSDL';
-
-	/**
-	 * [$xmlRequest XML do ação que está sendo enviado para a braspag]
-	 * @var string
-	 */
-	public $xmlRequest = null;
-
-	/**
-	 * [$xmlReponse XMl que á braspag está retornando]
-	 * @var string
-	 */
-	public $xmlReponse = null;
 
 	function __construct($options = [], $envProducation = true)
 	{
@@ -55,16 +43,7 @@ class BrasPagClient extends Client
 			$request = str_replace('xmlns:ns1="https://www.pagador.com.br/webservice/pagador"', '', $request);
 			$request = str_replace('<AuthorizeTransaction>', '<AuthorizeTransaction xmlns="https://www.pagador.com.br/webservice/pagador">', $request);
 		}
-		//set request...
-		$this->xmlRequest = $request;
-		try {
-            $response = parent::__doRequest($request, $location, $action, $version, $one_way);
-        } catch(\Exception $e) {
-            throw $e;
-        }
-		//set reponse...
-		$this->xmlReponse = $response;
-        return $response;
+		return parent::__doRequest($request, $location, $action, $version, $one_way);
 	}
 
 	/**

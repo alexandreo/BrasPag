@@ -7,8 +7,6 @@ use Alexandreo\Contracts\Customer\CustomerDataContracts;
 use Alexandreo\Contracts\Payment\PaymentDataCollectionContracts;
 use Alexandreo\Helpers;
 
-
-
 class AuthorizeTransactionEntity implements AuthorizeTransactionContracts
 {
 
@@ -21,7 +19,6 @@ class AuthorizeTransactionEntity implements AuthorizeTransactionContracts
 	private $customerDataContracts;
 
 	private $paymentDataCollectionContracts;
-
 
 	public function setRequestId($requestId)
 	{

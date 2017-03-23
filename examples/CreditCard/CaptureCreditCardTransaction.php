@@ -1,8 +1,8 @@
 <?php
-require_once '../vendor/autoload.php';
+require_once '../../vendor/autoload.php';
 
 use Alexandreo\BrasPag;
-use Alexandreo\Entity\Requests\RefundCreditCardTransactionEntity;
+use Alexandreo\Entity\Requests\CaptureCreditCardTransactionEntity;
 use Alexandreo\Entity\Transaction\TransactionDataRequestEntity;
 use Alexandreo\Entity\Transaction\TransactionDataCollectionEntity;
 
@@ -19,11 +19,12 @@ $transactionDataCollectionEntity = new TransactionDataCollectionEntity;
 $transactionDataCollectionEntity
 	->setTransactionDataRequest($transactionDataRequestEntity);
 //mount request soap..
-$refundCreditCardTransactionEntity = new RefundCreditCardTransactionEntity;
-$refundCreditCardTransactionEntity
+$captureCreditCardTransactionEntity = new CaptureCreditCardTransactionEntity;
+$captureCreditCardTransactionEntity
 	->setMerchantId('you MerchantId')
 	->setTransactionDataCollection($transactionDataCollectionEntity);
 
-$refundCreditCardTransaction = $BrasPag->refundCreditCardTransaction($refundCreditCardTransactionEntity);
 
-dd($refundCreditCardTransaction);
+$captureCreditCardTransaction = $BrasPag->captureCreditCardTransaction($captureCreditCardTransactionEntity);
+
+dd($captureCreditCardTransaction);
