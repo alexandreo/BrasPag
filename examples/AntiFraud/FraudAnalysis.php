@@ -55,5 +55,5 @@ $fraudAnalysisEntity
     ->setAntiFraudRequest($antiFraudRequestEntity)
     ->setDocumentData($documentDataEntity);
 
-$a = $brasPag->fraudAnalysis($fraudAnalysisEntity);
-dd($a);
+$fraudAnalysis = $brasPag->fraudAnalysis($fraudAnalysisEntity);
+dd($fraudAnalysis);

@@ -38,7 +38,6 @@ class AntiFraudeClient extends Client
 
     public function __doRequest($request, $location, $action, $version, $one_way = 0)
     {
-        dd($request);
         return parent::__doRequest($request, $location, $action, $version, $one_way);
     }
 
@@ -54,5 +53,16 @@ class AntiFraudeClient extends Client
         }
     }
 
+    public function fraudAnalysisTransactionDetails($fraudAnalysisTransactionDetails)
+    {
+        $request = new StdClass;
+        $request->request = (object)$fraudAnalysisTransactionDetails;
+
+        try {
+            return parent::FraudAnalysisTransactionDetails($request);
+        } catch (SoapFault $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
 
 }

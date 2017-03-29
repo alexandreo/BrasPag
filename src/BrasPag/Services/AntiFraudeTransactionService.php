@@ -1,9 +1,11 @@
 <?php
 namespace Alexandreo\Services;
 
+use Alexandreo\Contracts\Requests\FraudAnalysisTransactionDetailsContracts;
 use Alexandreo\Soap\AntiFraudeClient;
 use Alexandreo\Contracts\Requests\FraudAnalysisContracts;
 use Alexandreo\Soap\Factories\AntiFraude\FraudAnalysisFactory;
+use Alexandreo\Soap\Factories\AntiFraude\FraudAnalysisTransactionDetailsFactory;
 use StdClass;
 use Soapvar;
 
@@ -11,19 +13,41 @@ use Soapvar;
 trait AntiFraudeTransactionService
 {
 
-	private $brasPagAntiFraudeClient = null;
+    /**
+     * @var AntiFraudeClient|null
+     */
+    private $brasPagAntiFraudeClient = null;
 
-	function __construct($envProducation = true)
+    /**
+     * AntiFraudeTransactionService constructor.
+     * @param bool $envProducation
+     */
+    function __construct($envProducation = true)
 	{
 		$this->brasPagAntiFraudeClient = new AntiFraudeClient([], $envProducation);
 	}
 
-	public function fraudAnalysis(FraudAnalysisContracts $fraudAnalysisContracts)
+    /**
+     * @param FraudAnalysisContracts $fraudAnalysisContracts
+     * @return mixed
+     */
+    public function fraudAnalysis(FraudAnalysisContracts $fraudAnalysisContracts)
     {
         $fraudAnalysisFactory = new FraudAnalysisFactory($fraudAnalysisContracts);
         $fraudAnalysisRequest = $fraudAnalysisFactory->make();
-        $fraudAnalysisResponse = $this->brasPagAntiFraudeClient->fraudAnalysis($fraudAnalysisRequest);
-        dd($fraudAnalysisResponse);
+        return $this->brasPagAntiFraudeClient->fraudAnalysis($fraudAnalysisRequest);
+    }
+
+    /**
+     * @param FraudAnalysisTransactionDetailsContracts $fraudAnalysisTransactionDetailsContracts
+     * @return mixed
+     */
+    public function fraudAnalysisTransactionDetails(FraudAnalysisTransactionDetailsContracts $fraudAnalysisTransactionDetailsContracts)
+    {
+        $fraudAnalysisTransactionDetailsFactory = new FraudAnalysisTransactionDetailsFactory;
+        $fraudAnalysisTransactionDetailsRequest = $fraudAnalysisTransactionDetailsFactory->make($fraudAnalysisTransactionDetailsContracts);
+
+        return $this->brasPagAntiFraudeClient->fraudAnalysisTransactionDetails($fraudAnalysisTransactionDetailsRequest);
     }
 
 }
