@@ -5,6 +5,7 @@ use Alexandreo\Soap\Client;
 use SoapFault;
 use Exception;
 use Alexandreo\Exceptions\ErrorException;
+use StdClass;
 
 class AntiFraudeClient extends Client
 {
@@ -34,6 +35,24 @@ class AntiFraudeClient extends Client
             throw new Exception($e->getMessage());
         }
 	}
+
+    public function __doRequest($request, $location, $action, $version, $one_way = 0)
+    {
+        dd($request);
+        return parent::__doRequest($request, $location, $action, $version, $one_way);
+    }
+
+    public function fraudAnalysis($fraudAnalysis)
+    {
+        $request = new StdClass;
+        $request->request = (object)$fraudAnalysis;
+
+        try {
+            return parent::FraudAnalysis($request);
+        } catch (SoapFault $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
 
 
 }

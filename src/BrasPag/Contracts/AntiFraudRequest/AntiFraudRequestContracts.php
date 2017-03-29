@@ -54,7 +54,7 @@ interface AntiFraudRequestContracts
      * @param DecisionManagerData $decisionManagerData
      * @return mixed
      */
-    public function setDecisionManagerData(DecisionManagerData $decisionManagerData);
+    public function setDecisionManagerData(DecisionManagerDataContracts $decisionManagerData);
 
     /**
      * @param \Alexandreo\Contracts\AntiFraudRequest\FundTransferDataContracts $fundTransferData

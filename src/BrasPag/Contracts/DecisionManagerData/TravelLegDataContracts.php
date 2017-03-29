@@ -21,4 +21,16 @@ interface TravelLegDataContracts
      */
     public function setDestination($destination);
 
+    /**
+     * @param $origin
+     * @return mixed
+     */
+    public function getOrigin();
+
+    /**
+     * @param $destination
+     * @return mixed
+     */
+    public function getDestination();
+
 }

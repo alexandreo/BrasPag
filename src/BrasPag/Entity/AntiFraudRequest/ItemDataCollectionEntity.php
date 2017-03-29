@@ -1,13 +1,22 @@
 <?php
 
-namespace BrasPag\Entity\AntiFraudRequest;
+namespace Alexandreo\Entity\AntiFraudRequest;
 
 
 use Alexandreo\Contracts\AntiFraudRequest\ItemDataCollectionContracts;
 use Alexandreo\Contracts\ItemDataCollection\ItemDataContracts;
 
+/**
+ * Class ItemDataCollectionEntity
+ * @package BrasPag\Entity\AntiFraudRequest
+ */
 class ItemDataCollectionEntity implements ItemDataCollectionContracts
 {
+
+    /**
+     * @var array
+     */
+    private $itemData = [];
 
     /**
      * @param ItemDataContracts $itemData
@@ -15,7 +24,8 @@ class ItemDataCollectionEntity implements ItemDataCollectionContracts
      */
     public function setItemData(ItemDataContracts $itemData)
     {
-        // TODO: Implement setItemData() method.
+        $this->itemData[] = $itemData;
+        return $this;
     }
 
     /**
@@ -23,6 +33,6 @@ class ItemDataCollectionEntity implements ItemDataCollectionContracts
      */
     public function getItemData()
     {
-        // TODO: Implement getItemData() method.
+        return $this->itemData;
     }
 }

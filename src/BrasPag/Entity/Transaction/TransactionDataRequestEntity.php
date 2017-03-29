@@ -7,11 +7,11 @@ use Alexandreo\Contracts\Transaction\TransactionDataRequestContracts;
 class TransactionDataRequestEntity implements TransactionDataRequestContracts
 {
 
-	private $braspagTransactionId;
+	public $braspagTransactionId;
 
-	private $amount;
+	public $amount;
 
-	private $serviceTaxAmount;
+	public $serviceTaxAmount;
 
 	public function setBraspagTransactionId($braspagTransactionId)
 	{

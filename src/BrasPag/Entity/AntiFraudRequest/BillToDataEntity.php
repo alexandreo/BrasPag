@@ -1,6 +1,6 @@
 <?php
 
-namespace BrasPag\Entity\AntiFraudRequest;
+namespace Alexandreo\Entity\AntiFraudRequest;
 
 use Alexandreo\Contracts\AntiFraudRequest\BillToDataContracts;
 
@@ -25,6 +25,11 @@ class BillToDataEntity implements BillToDataContracts
      * @var
      */
     private $customerId;
+
+    /**
+     * @var
+     */
+    private $dateOfBirth;
 
     /**
      * @var
@@ -101,10 +106,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $city
+     * @return BillToDataEntity
      */
     public function setCity($city)
     {
         $this->city = $city;
+        return $this;
     }
 
     /**
@@ -117,10 +124,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $country
+     * @return BillToDataEntity
      */
     public function setCountry($country)
     {
         $this->country = $country;
+        return $this;
     }
 
     /**
@@ -133,10 +142,28 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $customerId
+     * @return BillToDataEntity
      */
     public function setCustomerId($customerId)
     {
         $this->customerId = $customerId;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateOfBirth()
+    {
+        return $this->dateOfBirth;
+    }
+
+    /**
+     * @param mixed $dateOfBirth
+     */
+    public function setDateOfBirth($dateOfBirth)
+    {
+        $this->dateOfBirth = $dateOfBirth;
     }
 
     /**
@@ -149,10 +176,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $email
+     * @return BillToDataEntity
      */
     public function setEmail($email)
     {
         $this->email = $email;
+        return $this;
     }
 
     /**
@@ -165,10 +194,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $firstName
+     * @return BillToDataEntity
      */
     public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
+        return $this;
     }
 
     /**
@@ -181,10 +212,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $hostName
+     * @return BillToDataEntity
      */
     public function setHostName($hostName)
     {
         $this->hostName = $hostName;
+        return $this;
     }
 
     /**
@@ -197,10 +230,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $httpBrowserCookiesAccepted
+     * @return BillToDataEntity
      */
     public function setHttpBrowserCookiesAccepted($httpBrowserCookiesAccepted)
     {
         $this->httpBrowserCookiesAccepted = $httpBrowserCookiesAccepted;
+        return $this;
     }
 
     /**
@@ -213,10 +248,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $httpBrowserEmail
+     * @return BillToDataEntity
      */
     public function setHttpBrowserEmail($httpBrowserEmail)
     {
         $this->httpBrowserEmail = $httpBrowserEmail;
+        return $this;
     }
 
     /**
@@ -229,10 +266,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $httpBrowserType
+     * @return BillToDataEntity
      */
     public function setHttpBrowserType($httpBrowserType)
     {
         $this->httpBrowserType = $httpBrowserType;
+        return $this;
     }
 
     /**
@@ -245,10 +284,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $ipAddress
+     * @return BillToDataEntity
      */
     public function setIpAddress($ipAddress)
     {
         $this->ipAddress = $ipAddress;
+        return $this;
     }
 
     /**
@@ -261,10 +302,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $lastName
+     * @return BillToDataEntity
      */
     public function setLastName($lastName)
     {
         $this->lastName = $lastName;
+        return $this;
     }
 
     /**
@@ -277,10 +320,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $phoneNumber
+     * @return BillToDataEntity
      */
     public function setPhoneNumber($phoneNumber)
     {
         $this->phoneNumber = $phoneNumber;
+        return $this;
     }
 
     /**
@@ -293,10 +338,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $postalCode
+     * @return BillToDataEntity
      */
     public function setPostalCode($postalCode)
     {
         $this->postalCode = $postalCode;
+        return $this;
     }
 
     /**
@@ -309,10 +356,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $state
+     * @return BillToDataEntity
      */
     public function setState($state)
     {
         $this->state = $state;
+        return $this;
     }
 
     /**
@@ -325,10 +374,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $street1
+     * @return BillToDataEntity
      */
     public function setStreet1($street1)
     {
         $this->street1 = $street1;
+        return $this;
     }
 
     /**
@@ -341,10 +392,12 @@ class BillToDataEntity implements BillToDataContracts
 
     /**
      * @param mixed $street2
+     * @return BillToDataEntity
      */
     public function setStreet2($street2)
     {
         $this->street2 = $street2;
+        return $this;
     }
 
 }

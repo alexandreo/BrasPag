@@ -7,23 +7,51 @@ use Alexandreo\Contracts\AntiFraudRequest\DocumentDataContracts;
 use Alexandreo\Contracts\Requests\AuthorizeTransactionContracts;
 use Alexandreo\Contracts\Requests\FraudAnalysisContracts;
 
+/**
+ * Class FraudAnalysisEntity
+ * @package Alexandreo\Entity\Requests
+ */
 class FraudAnalysisEntity implements FraudAnalysisContracts
 {
 
+    /**
+     * @var
+     */
     private $requestId;
 
-    private $version;
+    /**
+     * @var string
+     */
+    private $version = '1.0';
 
+    /**
+     * @var
+     */
     private $accessKey;
 
+    /**
+     * @var
+     */
     private $antiFraudSequenceType;
 
+    /**
+     * @var
+     */
     private $antiFraudRequest;
 
+    /**
+     * @var
+     */
     private $merchantId;
 
+    /**
+     * @var
+     */
     private $documentData;
 
+    /**
+     * @var
+     */
     private $authorizeTransaction;
 
     /**

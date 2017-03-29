@@ -6,6 +6,10 @@ use Alexandreo\Services\{
     AntiFraudeTransactionService
 };
 
+/**
+ * Class BrasPag
+ * @package Alexandreo
+ */
 class BrasPag
 {
 
