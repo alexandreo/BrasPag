@@ -2,12 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="511ca9fd-1f3b-4b59-ac73-bca442105514" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysisWithCreditCard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BrasPag.iml" afterPath="$PROJECT_DIR$/.idea/BrasPag.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/ale.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/ale.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysis.php" afterPath="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysisTransactionDetails.php" afterPath="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysisTransactionDetails.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysisWithCreditCard.php" afterPath="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysisWithCreditCard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CreditCard/AuthorizeTransaction.php" afterPath="$PROJECT_DIR$/examples/CreditCard/AuthorizeTransaction.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CreditCard/CaptureCreditCardTransaction.php" afterPath="$PROJECT_DIR$/examples/CreditCard/CaptureCreditCardTransaction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CreditCard/RefundCreditCardTransaction.php" afterPath="$PROJECT_DIR$/examples/CreditCard/RefundCreditCardTransaction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CreditCard/VoidCreditCardTransaction.php" afterPath="$PROJECT_DIR$/examples/CreditCard/VoidCreditCardTransaction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/BrasPag.php" afterPath="$PROJECT_DIR$/src/BrasPag/BrasPag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Constants/BrasPagSoapClient.php" afterPath="$PROJECT_DIR$/src/BrasPag/Constants/BrasPagSoapClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AdditionalDataCollection/AdditionalDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AdditionalDataCollection/AdditionalDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/AdditionalDataCollectionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/AdditionalDataCollectionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/AntiFraudRequestContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/AntiFraudRequestContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/BankInfoDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/BankInfoDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/BillToDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/BillToDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/CardDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/CardDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/DecisionManagerDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/DecisionManagerDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/DocumentDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/DocumentDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/FundTransferDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/FundTransferDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/InvoiceHeaderDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/InvoiceHeaderDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/ItemDataCollectionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/ItemDataCollectionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/MerchantDefinedDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/MerchantDefinedDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/PurchaseTotalsDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/PurchaseTotalsDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/ShipToDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/AntiFraudRequest/ShipToDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Customer/CustomerAddressDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Customer/CustomerAddressDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Customer/CustomerDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Customer/CustomerDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Customer/CustomerDeliveryAddressDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Customer/CustomerDeliveryAddressDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/DecisionManagerData/TravelDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/DecisionManagerData/TravelDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/DecisionManagerData/TravelLegDataCollectionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/DecisionManagerData/TravelLegDataCollectionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/DecisionManagerData/TravelLegDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/DecisionManagerData/TravelLegDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/ItemDataCollection/ItemDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/ItemDataCollection/ItemDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/ItemDataCollection/PassengerDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/ItemDataCollection/PassengerDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/ItemDataCollection/ProductDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/ItemDataCollection/ProductDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Order/OrderDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Order/OrderDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/AdditionalDataCollectionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/AdditionalDataCollectionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/AffiliationDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/AffiliationDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/CreditCardDataRequestContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/CreditCardDataRequestContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/PaymentDataCollectionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/PaymentDataCollectionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/PaymentDataRequestContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/PaymentDataRequestContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/PaymentTypeContract.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Payment/PaymentTypeContract.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/AuthorizeTransactionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/AuthorizeTransactionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/CaptureCreditCardTransactionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/CaptureCreditCardTransactionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/FraudAnalysisContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/FraudAnalysisContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/FraudAnalysisTransactionDetailsContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/FraudAnalysisTransactionDetailsContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/RefundCreditCardTransactionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/RefundCreditCardTransactionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/VoidCreditCardTransactionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Requests/VoidCreditCardTransactionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Transaction/TransactionDataCollectionContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Transaction/TransactionDataCollectionContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Contracts/Transaction/TransactionDataRequestContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Contracts/Transaction/TransactionDataRequestContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AdditionalDataCollection/AdditionalDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AdditionalDataCollection/AdditionalDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/AdditionalDataCollectionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/AdditionalDataCollectionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/AntiFraudRequestEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/AntiFraudRequestEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/BankInfoDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/BankInfoDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/BillToDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/BillToDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/CardDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/CardDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/DecisionManagerDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/DecisionManagerDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/DocumentDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/DocumentDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/FundTransferDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/FundTransferDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/InvoiceHeaderDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/InvoiceHeaderDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/ItemDataCollectionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/ItemDataCollectionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/MerchantDefinedDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/MerchantDefinedDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/PurchaseTotalsDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/PurchaseTotalsDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/ShipToDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/ShipToDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Customer/CustomerAddressDataContracts.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Customer/CustomerAddressDataContracts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Customer/CustomerDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Customer/CustomerDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Customer/CustomerDeliveryAddressDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Customer/CustomerDeliveryAddressDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/DecisionManagerData/TravelDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/DecisionManagerData/TravelDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/DecisionManagerData/TravelLegDataCollectionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/DecisionManagerData/TravelLegDataCollectionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/DecisionManagerData/TravelLegDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/DecisionManagerData/TravelLegDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/ItemDataCollection/ItemDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/ItemDataCollection/ItemDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/ItemDataCollection/PassengerDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/ItemDataCollection/PassengerDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/ItemDataCollection/ProductDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/ItemDataCollection/ProductDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Order/OrderDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Order/OrderDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/AdditionalDataCollectionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/AdditionalDataCollectionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/AffiliationDataEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/AffiliationDataEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/CreditCardDataRequestEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/CreditCardDataRequestEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/PaymentDataCollectionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/PaymentDataCollectionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/PaymentDataRequestEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Payment/PaymentDataRequestEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/AuthorizeTransactionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/AuthorizeTransactionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/CaptureCreditCardTransactionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/CaptureCreditCardTransactionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/FraudAnalysisEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/FraudAnalysisEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/FraudAnalysisTransactionDetailsEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/FraudAnalysisTransactionDetailsEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/RefundCreditCardTransactionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/RefundCreditCardTransactionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/VoidCreditCardTransactionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Requests/VoidCreditCardTransactionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Transaction/TransactionDataCollectionEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Transaction/TransactionDataCollectionEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Entity/Transaction/TransactionDataRequestEntity.php" afterPath="$PROJECT_DIR$/src/BrasPag/Entity/Transaction/TransactionDataRequestEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Exceptions/ErrorException.php" afterPath="$PROJECT_DIR$/src/BrasPag/Exceptions/ErrorException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Helpers.php" afterPath="$PROJECT_DIR$/src/BrasPag/Helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Services/AntiFraudeTransactionService.php" afterPath="$PROJECT_DIR$/src/BrasPag/Services/AntiFraudeTransactionService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Services/PagadorTransactionService.php" afterPath="$PROJECT_DIR$/src/BrasPag/Services/PagadorTransactionService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Client.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/AdditionalDataFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/AdditionalDataFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/AntiFraudRequestFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/AntiFraudRequestFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/FraudAnalysisFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/FraudAnalysisFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/FraudAnalysisTransactionDetailsFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/FraudAnalysisTransactionDetailsFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/ItemDataFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/ItemDataFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/TravelDataFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/TravelDataFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/TravelLegDataFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/TravelLegDataFactory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/CreditCard/AuthorizeTransactionFactory.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/Factories/CreditCard/AuthorizeTransactionFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/PagadorClient.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/PagadorClient.php" />
     </list>
     <ignored path="BrasPag.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +155,7 @@
       <file leaf-file-name="FraudAnalysis.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/AntiFraud/FraudAnalysis.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="615">
               <caret line="49" column="58" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="58" />
               <folding />
             </state>
@@ -68,14 +172,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorizeTransaction.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthorizeTransaction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/CreditCard/AuthorizeTransaction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="291">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding>
                 <element signature="e#50#73#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +207,7 @@
       <file leaf-file-name="RefundCreditCardTransaction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/CreditCard/RefundCreditCardTransaction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -136,7 +250,6 @@
         <option value="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/BankInfoDataEntity.php" />
         <option value="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/AntiFraudRequestEntity.php" />
         <option value="$PROJECT_DIR$/src/BrasPag/Entity/Requests/FraudAnalysisEntity.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/BrasPag/BrasPag.php" />
         <option value="$PROJECT_DIR$/src/BrasPag/Entity/AntiFraudRequest/BillToDataEntity.php" />
         <option value="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/ItemDataFactory.php" />
@@ -159,6 +272,7 @@
         <option value="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysis.php" />
         <option value="$PROJECT_DIR$/examples/CreditCard/CaptureCreditCardTransaction.php" />
         <option value="$PROJECT_DIR$/examples/CreditCard/AuthorizeTransaction.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -221,7 +335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,6 +387,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -363,12 +477,13 @@
       <workItem from="1494603086432" duration="3946000" />
       <workItem from="1494946975906" duration="1218000" />
       <workItem from="1495204087205" duration="758000" />
-      <workItem from="1495476442032" duration="2619000" />
+      <workItem from="1495476442032" duration="4289000" />
+      <workItem from="1495550924793" duration="33000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143259000" />
+    <option name="totallyTimeSpent" value="144962000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,15 +496,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="51" width="1600" height="804" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31660232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32110682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -480,13 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -683,9 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="76" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="76" />
-          <folding>
-            <element signature="e#49#72#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,9 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1036">
           <caret line="84" column="61" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
-          <folding>
-            <element signature="e#49#72#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,7 +853,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/AntiFraud/FraudAnalysis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
+        <state relative-caret-position="615">
           <caret line="49" column="58" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="58" />
           <folding />
         </state>
@@ -768,7 +869,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/CreditCard/RefundCreditCardTransaction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -786,11 +887,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/CreditCard/AuthorizeTransaction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="291">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding>
             <element signature="e#50#73#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
