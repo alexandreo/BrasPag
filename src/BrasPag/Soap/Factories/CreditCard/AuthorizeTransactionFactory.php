@@ -2,6 +2,9 @@
 
 namespace Alexandreo\Soap\Factories\CreditCard;
 
+use Alexandreo\Constants\BrasPagSoapClient;
+use StdClass;
+use SoapVar;
 use Alexandreo\Contracts\Requests\AuthorizeTransactionContracts;
 
 class AuthorizeTransactionFactory

@@ -8,7 +8,7 @@ use Alexandreo\Entity\Transaction\TransactionDataCollectionEntity;
 
 
 
-$BrasPag = new BrasPag;
+$BrasPag = new BrasPag(false);
 
 $transactionDataRequestEntity = new TransactionDataRequestEntity;
 $transactionDataRequestEntity
@@ -21,7 +21,7 @@ $transactionDataCollectionEntity
 //mount request soap..
 $captureCreditCardTransactionEntity = new CaptureCreditCardTransactionEntity;
 $captureCreditCardTransactionEntity
-	->setMerchantId('you MerchantId')
+	->setMerchantId('78d72764-b315-4b55-9558-c0aeb8dd8352')
 	->setTransactionDataCollection($transactionDataCollectionEntity);
 
 
