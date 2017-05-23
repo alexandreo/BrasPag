@@ -21,7 +21,7 @@ $transactionDataCollectionEntity
 //mount request soap..
 $captureCreditCardTransactionEntity = new CaptureCreditCardTransactionEntity;
 $captureCreditCardTransactionEntity
-	->setMerchantId('78d72764-b315-4b55-9558-c0aeb8dd8352')
+	->setMerchantId('you MerchantId')
 	->setTransactionDataCollection($transactionDataCollectionEntity);
 
 

@@ -14,7 +14,7 @@ $BrasPag = new BrasPag(false);
 
 $orderDataEntity = new OrderDataEntity;
 $orderDataEntity
-	->setMerchantId('78d72764-b315-4b55-9558-c0aeb8dd8352')
+	->setMerchantId('you MerchantId')
 	->setOrderId(rand(100,99999));
 
 $customerDataEntity = new CustomerDataEntity;
