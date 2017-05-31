@@ -1,6 +1,6 @@
 <?php
 
-namespace BrasPag\Entity\AntiFraudRequest;
+namespace Alexandreo\Entity\AntiFraudRequest;
 
 
 use Alexandreo\Contracts\AdditionalDataCollection\AdditionalDataContracts;

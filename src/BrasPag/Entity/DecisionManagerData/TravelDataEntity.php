@@ -1,6 +1,6 @@
 <?php
 
-namespace BrasPag\Entity\DecisionManagerData;
+namespace Alexandreo\Entity\DecisionManagerData;
 
 
 use Alexandreo\Contracts\DecisionManagerData\TravelDataContracts;

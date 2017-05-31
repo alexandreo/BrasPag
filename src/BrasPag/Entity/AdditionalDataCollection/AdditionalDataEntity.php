@@ -1,6 +1,6 @@
 <?php
 
-namespace BrasPag\Entity\AdditionalDataCollection;
+namespace Alexandreo\Entity\AdditionalDataCollection;
 
 
 use Alexandreo\Contracts\AdditionalDataCollection\AdditionalDataContracts;
