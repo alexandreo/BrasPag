@@ -70,15 +70,14 @@ class AntiFraudRequestFactory
         }
 
         if (!is_null($this->AntiFraudRequest->getShipToData())){
-            $this->antiFraud->PurchaseTotalsData = $this->makeShipToData();
+             $this->antiFraud->ShipToData = $this->makeShipToData();
         }
 
         $this->antiFraud->DeviceFingerPrintId = $this->AntiFraudRequest->getDeviceFingerPrintId();
 
         if (!is_null($this->AntiFraudRequest->getAdditionalDataCollection())) {
-            $this->antiFraud->PurchaseTotalsData = $this->makeAdditionalDataCollection();
+            $this->antiFraud->AdditionalDataCollection = $this->makeAdditionalDataCollection();
         }
-
 
 
         return $this->antiFraud;
