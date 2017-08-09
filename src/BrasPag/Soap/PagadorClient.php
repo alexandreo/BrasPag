@@ -12,7 +12,7 @@ class PagadorClient extends Client
 	 * [$producaoEndPoint Url para o ambiente de produção]
 	 * @var string
 	 */
-	private $producaoEndPoint = 'https://pagador.com.br/webservice/pagadorTransaction.asmx?WSDL';
+	private $producaoEndPoint = 'https://antifraude.braspag.com.br/AntiFraudeWS/AntiFraud.asmx?WSDL';
 
 	/**
 	 * [$homologacaoEndPoint url para o ambiente de homologação]
