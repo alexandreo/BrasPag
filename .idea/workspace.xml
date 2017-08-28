@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="511ca9fd-1f3b-4b59-ac73-bca442105514" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/PagadorClient.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/PagadorClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php" afterPath="$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php" />
     </list>
     <ignored path="BrasPag.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,6 +36,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AntiFraudeClient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="15" column="99" lean-forward="false" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -92,7 +102,6 @@
         <option value="$PROJECT_DIR$/src/BrasPag/Services/AntiFraudeTransactionService.php" />
         <option value="$PROJECT_DIR$/src/BrasPag/Soap/Factories/CreditCard/AuthorizeTransactionFactory.php" />
         <option value="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysisWithCreditCard.php" />
-        <option value="$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php" />
         <option value="$PROJECT_DIR$/examples/AntiFraud/FraudAnalysis.php" />
         <option value="$PROJECT_DIR$/examples/CreditCard/CaptureCreditCardTransaction.php" />
         <option value="$PROJECT_DIR$/examples/CreditCard/AuthorizeTransaction.php" />
@@ -100,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/BrasPag/Soap/Factories/AntiFraude/AntiFraudRequestFactory.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/BrasPag/Soap/PagadorClient.php" />
+        <option value="$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php" />
       </list>
     </option>
   </component>
@@ -289,12 +299,12 @@
       <workItem from="1499110043019" duration="2206000" />
       <workItem from="1499165943744" duration="8000" />
       <workItem from="1502300015383" duration="1162000" />
-      <workItem from="1503935630463" duration="57000" />
+      <workItem from="1503935630463" duration="521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151092000" />
+    <option name="totallyTimeSpent" value="151556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BrasPag/Entity/Requests/FraudAnalysisEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -696,6 +699,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrasPag/Soap/AntiFraudeClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="15" column="99" lean-forward="false" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
+          <folding />
         </state>
       </provider>
     </entry>
